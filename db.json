@@ -1,0 +1,75 @@
+{
+  "seller": [
+    {
+      "id": "9488",
+      "name": "Shah",
+      "email": "Shah@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "7f87",
+      "name": "Saqib ",
+      "email": "saqib@gmail.com",
+      "pswd": "12345678"
+    },
+    {
+      "id": "d501",
+      "name": "sasa",
+      "email": "saqib@gmail.com",
+      "pswd": "dsds"
+    },
+    {
+      "id": "4436",
+      "name": "sss",
+      "email": "admin@gmail.com",
+      "pswd": "aaaa"
+    },
+    {
+      "id": "ab00",
+      "name": "sss",
+      "email": "admin@gmail.com",
+      "pswd": "sdsds"
+    },
+    {
+      "id": "fba3",
+      "name": "ssss",
+      "email": "admin@gmail.comaa",
+      "pswd": "12345678"
+    },
+    {
+      "id": "3a5f",
+      "name": "sss",
+      "email": "admin@gmail.com",
+      "pswd": "aaaaa"
+    },
+    {
+      "id": "4ead",
+      "name": "ssss",
+      "email": "admin@gmail.comaaa",
+      "pswd": "aaaa"
+    },
+    {
+      "id": "80b0",
+      "name": "",
+      "email": "",
+      "pswd": ""
+    },
+    {
+      "id": "98fb",
+      "name": "",
+      "email": "",
+      "pswd": ""
+    },
+    {
+      "id": "8497",
+      "email": "sdassjkhds@sldk.ccom",
+      "pswd": "jshkdjsk"
+    },
+    {
+      "id": "fcbf",
+      "name": "",
+      "email": "",
+      "pswd": ""
+    }
+  ]
+}
