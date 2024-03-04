@@ -1,75 +1,70 @@
 {
   "seller": [
     {
-      "id": "9488",
-      "name": "Shah",
-      "email": "Shah@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "7f87",
-      "name": "Saqib ",
-      "email": "saqib@gmail.com",
-      "pswd": "12345678"
-    },
-    {
-      "id": "d501",
-      "name": "sasa",
-      "email": "saqib@gmail.com",
-      "pswd": "dsds"
-    },
-    {
-      "id": "4436",
+      "id": "b11c",
       "name": "sss",
-      "email": "admin@gmail.com",
-      "pswd": "aaaa"
+      "email": "admin@admin.com",
+      "password": "a"
     },
     {
-      "id": "ab00",
+      "id": "812f",
+      "name": "aaa",
+      "email": "admin@gmail.com",
+      "password": "a"
+    },
+    {
+      "id": "8b29",
       "name": "sss",
-      "email": "admin@gmail.com",
-      "pswd": "sdsds"
+      "email": "q@q.com",
+      "password": "1"
     },
     {
-      "id": "fba3",
+      "id": "c65d",
+      "name": "sas",
+      "email": "klajs",
+      "password": "lkll"
+    },
+    {
+      "id": "72db",
+      "name": "Saqib",
+      "email": "admin@admin.com",
+      "password": "4545"
+    },
+    {
+      "id": "06d2",
+      "name": "aaa",
+      "email": "tenant@tenant.com",
+      "password": "dcdcdcdc"
+    },
+    {
+      "id": "f0e1",
       "name": "ssss",
-      "email": "admin@gmail.comaa",
-      "pswd": "12345678"
+      "email": "tenant@tenant.comss",
+      "password": "ssss"
     },
     {
-      "id": "3a5f",
-      "name": "sss",
-      "email": "admin@gmail.com",
-      "pswd": "aaaaa"
-    },
-    {
-      "id": "4ead",
+      "id": "3db4",
       "name": "ssss",
-      "email": "admin@gmail.comaaa",
-      "pswd": "aaaa"
+      "email": "admin@admin.comaa",
+      "password": "aaaa"
     },
     {
-      "id": "80b0",
-      "name": "",
-      "email": "",
-      "pswd": ""
+      "id": "9e97",
+      "name": "sss",
+      "email": "syedsaqibshah120@gmail.com",
+      "password": "sss"
     },
     {
-      "id": "98fb",
-      "name": "",
-      "email": "",
-      "pswd": ""
+      "id": "e044",
+      "name": "sss",
+      "email": "admin@admin.comss",
+      "password": "dwdw"
     },
     {
-      "id": "8497",
-      "email": "sdassjkhds@sldk.ccom",
-      "pswd": "jshkdjsk"
-    },
-    {
-      "id": "fcbf",
-      "name": "",
-      "email": "",
-      "pswd": ""
+      "id": "6a38",
+      "name": "ssss",
+      "email": "admin@admin.com",
+      "password": "a"
     }
   ]
 }

@@ -1,0 +1,20 @@
+.custom-nav {
+    background: linear-gradient(to left, rgb(100, 46, 46), #220d0d);
+  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+
+.custom-nav .navbar-brand {
+  font-family: 'Arial', sans-serif; 
+  font-size: 28px; 
+  font-weight: bold;
+  color: #ffffff; 
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-nav .navbar-brand:hover {
+  color: #5ec4dd; 
+}
+

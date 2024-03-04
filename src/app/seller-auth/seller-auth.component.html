@@ -1,0 +1,61 @@
+
+<!-- SignUp -->
+
+
+<div class="container">
+    <div *ngIf="!showLogin" class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12 signup-form">
+        <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="was-validated"  >
+          <h3 style="text-align: center;"> SignUp</h3> 
+          <div class="mb-3 mt-3">
+                <input type="text" ngModel class="form-control" id="name" placeholder="Enter name" name="name" required minlength="3" maxlength="8">
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+          <div class="mb-3 mt-3">
+            <input type="email" ngModel class="form-control" id="email" placeholder="Enter email" name="email" required>
+            <div class="invalid-feedback">Please enter your email.</div>
+          </div>
+          <div class="mb-3">
+            <input type="password" ngModel class="form-control" id="pwd" placeholder="Enter password" name="password" required  minlength="1" maxlength="8">
+            <div class="invalid-feedback">Please enter your password.</div>
+          </div>
+          <div class="d-grid gap-3">
+          <button  type="submit" class="btn btn-primary  btn-block">SignUp</button>
+        </div>
+          <a class="auth-toggle-link" (click)="openlogin()">Already have account? Click to login</a>
+       
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Login area -->
+
+
+<div class="container">
+  <div *ngIf="showLogin" class="row justify-content-center">
+    <div class="col-lg-4 col-md-6 col-sm-12 login-form">
+      <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="was-validated"  >
+        <h3 style="text-align: center;">Login</h3>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" ngModel class="form-control" id="email" placeholder="Enter email" name="email" required>
+          <div class="invalid-feedback">Please enter your email.</div>
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" ngModel class="form-control" id="pwd" placeholder="Enter password" name="password" required  minlength="1" maxlength="8">
+          <div class="invalid-feedback">Please enter your password.</div>
+        </div>
+        <div class="d-grid gap-3">
+        <button  type="submit" class="btn btn-primary ">Login</button>
+      </div>
+        <a class="auth-toggle-link" (click)="openSignUp()">Don't have account? Click to Signup</a>
+     
+      </form>
+    </div>
+  </div>
+</div>
+
+

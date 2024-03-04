@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-sm navbar-dark custom-nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">E COMM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <div *ngIf="menuType==='default'" class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary btn-sm" type="button">Search</button>
+      </div>
+<div [ngSwitch]="menuType"  class="navbar-nav ms-auto">
+      <ul *ngSwitchCase="'default'" class="navbar-nav ms-auto"> 
+        <li class="nav-item">
+          <a class="nav-link" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="seller-auth">Seller</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 5px;">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 5px;">Cart(0)</a>
+        </li>
+      </ul>
+
+      <ul *ngSwitchCase="'seller'" class="navbar-nav ms-auto"> 
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 5px;">Product List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 5px;">Add Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 5px;" (click)="logOut()">Logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 5px; color: #ffffff; ">Hi::{{sellerName| titlecase}}</a>
+        </li>
+      </ul>
+    </div>
+      
+    </div>
+  </div>
+</nav>
