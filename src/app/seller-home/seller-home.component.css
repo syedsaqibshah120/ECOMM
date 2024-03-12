@@ -1,0 +1,16 @@
+.message-successfull{
+    background-color: green;
+    border-radius: 100px;
+    color: white;
+    font-weight: bold; 
+    text-align: center;
+    margin-top: 5px;
+}
+.adjust-update-link{
+    margin-right: 10px;
+}
+
+.delete-icon {
+    color: rgb(202, 5, 5);
+    /* Add any additional styles you need */
+  }

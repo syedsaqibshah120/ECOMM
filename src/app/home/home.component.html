@@ -1,1 +1,48 @@
-<p>home works!</p>
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators" *ngIf="popularProducts">
+    <button type="button"style="background-color: yellowgreen;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button"style="background-color: yellowgreen;" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button"style="background-color: yellowgreen; " data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" *ngFor="let treandy of popularProducts">
+      <a routerLink="/details/{{treandy .id}}">
+      <img src="{{treandy.image}}" class="d-block w-100" alt="...">
+    </a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{treandy.name}}</h5>
+        <p>{{treandy.description}}</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" style="background-color: yellowgreen; border-radius: 35px;" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" style="background-color: yellowgreen; border-radius: 35px;" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <div class="container-fluid">
+  <div class="row" *ngIf="treandyProducts" style="padding-top: 15px;">
+    <div class="col-md-3" *ngFor="let item of treandyProducts" style="padding-top: 15px;">
+        <div class="img-details text-center">
+            <div class="card-body">
+              <a routerLink="/details/{{item.id}}">
+                <img src="{{item.image}}" class="img-fluid" style="width: 100px; height: 100px; align-content: center;">
+              </a>
+                              <div class="">
+                    <h4 class="card-title">{{item.name}}</h4>
+                    <p class="price">Rs: {{item.price}}</p>
+                    <!-- <p class="card-text">Color:{{item.color}}</p> -->
+                    <a class="adjust-update-link" routerLink="/details/{{item.id}}"><fa-icon [icon]="editIcon" class="fa-2x"></fa-icon></a>
+                    <a class="delete-icon" routerLink=""><fa-icon [icon]="icon" class="fa-2x"></fa-icon></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

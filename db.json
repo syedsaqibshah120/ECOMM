@@ -5,66 +5,175 @@
       "name": "sss",
       "email": "admin@admin.com",
       "password": "a"
+    }
+  ],
+  "products": [
+    {
+      "name": "watch",
+      "price": "9430",
+      "color": "gray",
+      "category": "laptop",
+      "image": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Portable computer for work, entertainment, and communication; essential in modern life",
+      "id": "b7e1"
     },
     {
-      "id": "812f",
-      "name": "aaa",
-      "email": "admin@gmail.com",
+      "name": "Shoes",
+      "price": "3500",
+      "color": "Red",
+      "category": "Shoes",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Striking red shoes add flair, turning heads with bold, vibrant style.",
+      "id": "8304"
+    },
+    {
+      "id": "b3bd",
+      "name": "Smart Watch",
+      "price": "2500",
+      "color": "na",
+      "category": "Watch",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1399&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Wearable device: smartwatch blends style, health features, and digital connectivity seamlessly."
+    },
+    {
+      "id": "60d0",
+      "name": "wireless Mouse",
+      "price": "1200",
+      "color": "Gray",
+      "category": "mouse",
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Cord-free precision: wireless mouse enhances convenience, offering seamless navigation and control."
+    },
+    {
+      "id": "8921",
+      "name": "Handbag",
+      "price": "8000",
+      "color": "gray",
+      "category": "bag",
+      "image": "https://images.unsplash.com/photo-1571689936114-b16146c9570a?q=80&w=1482&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Fashionable accessory, handbags combine style and functionality, complementing personal expression effortlessly"
+    },
+    {
+      "name": "watch",
+      "price": "9430",
+      "color": "gray",
+      "category": "laptop",
+      "image": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Portable computer for work, entertainment, and communication; essential in modern life",
+      "id": "b7e1"
+    },
+    {
+      "name": "Shoes",
+      "price": "3500",
+      "color": "Red",
+      "category": "Shoes",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Striking red shoes add flair, turning heads with bold, vibrant style.",
+      "id": "8304"
+    },
+    {
+      "id": "b3bd",
+      "name": "Smart Watch",
+      "price": "2500",
+      "color": "na",
+      "category": "Watch",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1399&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Wearable device: smartwatch blends style, health features, and digital connectivity seamlessly."
+    },
+    {
+      "id": "60d0",
+      "name": "wireless Mouse",
+      "price": "1200",
+      "color": "Gray",
+      "category": "mouse",
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Cord-free precision: wireless mouse enhances convenience, offering seamless navigation and control."
+    },
+    {
+      "id": "8921",
+      "name": "Handbag",
+      "price": "8000",
+      "color": "gray",
+      "category": "bag",
+      "image": "https://images.unsplash.com/photo-1571689936114-b16146c9570a?q=80&w=1482&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Fashionable accessory, handbags combine style and functionality, complementing personal expression effortlessly"
+    },
+    {
+      "name": "watch",
+      "price": "9430",
+      "color": "gray",
+      "category": "laptop",
+      "image": "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Portable computer for work, entertainment, and communication; essential in modern life",
+      "id": "b7e1"
+    },
+    {
+      "name": "Shoes",
+      "price": "3500",
+      "color": "Red",
+      "category": "Shoes",
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Striking red shoes add flair, turning heads with bold, vibrant style.",
+      "id": "8304"
+    },
+    {
+      "id": "b3bd",
+      "name": "Smart Watch",
+      "price": "2500",
+      "color": "na",
+      "category": "Watch",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1399&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Wearable device: smartwatch blends style, health features, and digital connectivity seamlessly."
+    },
+    {
+      "id": "60d0",
+      "name": "wireless Mouse",
+      "price": "1200",
+      "color": "Gray",
+      "category": "mouse",
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Cord-free precision: wireless mouse enhances convenience, offering seamless navigation and control."
+    },
+    {
+      "id": "8921",
+      "name": "Handbag",
+      "price": "8000",
+      "color": "gray",
+      "category": "bag",
+      "image": "https://images.unsplash.com/photo-1571689936114-b16146c9570a?q=80&w=1482&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "description": "Fashionable accessory, handbags combine style and functionality, complementing personal expression effortlessly"
+    }
+  ],
+  "users": [
+    {
+      "id": "9456",
+      "name": "Kashif",
+      "email": "keqylok@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "aa4e",
+      "name": "Saqib Shah",
+      "email": "a@a.com",
       "password": "a"
     },
     {
-      "id": "8b29",
-      "name": "sss",
-      "email": "q@q.com",
-      "password": "1"
+      "id": "be94",
+      "name": "Armando Foreman",
+      "email": "vucyx@mailinator.com",
+      "password": "Pa$$w0rd!"
     },
     {
-      "id": "c65d",
-      "name": "sas",
-      "email": "klajs",
-      "password": "lkll"
+      "id": "8f2f",
+      "name": "",
+      "email": "",
+      "password": ""
     },
     {
-      "id": "72db",
-      "name": "Saqib",
-      "email": "admin@admin.com",
-      "password": "4545"
-    },
-    {
-      "id": "06d2",
+      "id": "b0bd",
       "name": "aaa",
-      "email": "tenant@tenant.com",
-      "password": "dcdcdcdc"
-    },
-    {
-      "id": "f0e1",
-      "name": "ssss",
-      "email": "tenant@tenant.comss",
-      "password": "ssss"
-    },
-    {
-      "id": "3db4",
-      "name": "ssss",
-      "email": "admin@admin.comaa",
-      "password": "aaaa"
-    },
-    {
-      "id": "9e97",
-      "name": "sss",
-      "email": "syedsaqibshah120@gmail.com",
-      "password": "sss"
-    },
-    {
-      "id": "e044",
-      "name": "sss",
-      "email": "admin@admin.comss",
-      "password": "dwdw"
-    },
-    {
-      "id": "6a38",
-      "name": "ssss",
       "email": "admin@admin.com",
-      "password": "a"
+      "password": "aa"
     }
   ]
 }

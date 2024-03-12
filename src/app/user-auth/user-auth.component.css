@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(to top, #3498db, #2c3e50);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .signup-form {
+    background: linear-gradient(to top, #ffffff, #bdbcbc);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    cursor:pointer;
+  }
+  .login-form {
+    background: linear-gradient(to top, #ffffff, #bdbcbc);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  .auth-toggle-link{
+    margin-top: 20px;
+    color: blueviolet;
+    font-size: 14px;
+   
+    text-align: left;
+  }

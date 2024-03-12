@@ -1,0 +1,55 @@
+<div class="container">
+  <div *ngIf="!showLogin" class="user-signup">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12 login-form">
+        <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)" class="was-validated">
+          <h3 style="text-align: center;">User SignUp</h3>
+          <div class="mb-3 mt-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" ngModel class="form-control" id="name" placeholder="Enter your name" name="name" required minlength="1" maxlength="8">
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" ngModel class="form-control" id="email" placeholder="Enter email" name="email" required>
+            <div class="invalid-feedback">Please enter your email.</div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" ngModel class="form-control" id="password" placeholder="Enter password" name="password" required>
+            <div class="invalid-feedback">Please enter your password.</div>
+          </div>
+          <div class="d-grid gap-3">
+            <button type="submit" class="btn btn-primary" [disabled]="userSignUp.invalid">Sign Up</button>
+          </div>
+          <p>Already have an account? <a (click)="openLogin()">Click here</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="showLogin" class="user-login">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6 col-sm-12 login-form">
+        <form #userLogin="ngForm" (ngSubmit)="Login(userLogin.value)" class="was-validated">
+          <h3 style="text-align: center;">User Login</h3>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" ngModel class="form-control" id="email" placeholder="Enter email" name="email" required minlength="1" maxlength="8">
+            <div class="invalid-feedback">Please enter your email.</div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" ngModel class="form-control" id="password" placeholder="Enter password" name="password" required>
+            <div class="invalid-feedback">Please enter your password.</div>
+          </div>
+          <div class="d-grid gap-3">
+            <p>{{authError}}</p>
+            <button type="submit" class="btn btn-primary" [disabled]="userLogin.invalid">Login</button>
+          </div>
+          <p>Want to create an account? <a (click)="openSignUp()">Click here</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

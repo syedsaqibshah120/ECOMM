@@ -1,14 +1,13 @@
 <nav class="navbar navbar-expand-sm navbar-dark custom-nav">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="">E COMM</a>
+    <a class="navbar-brand" routerLink="">Online Store</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse" id="mynavbar">
       <div *ngIf="menuType==='default'" class="d-flex">
         <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary btn-sm" type="button">Search</button>
+        <a class="delete-icon"  routerLink=""> <fa-icon  [icon]="searchIcon" ></fa-icon> </a>
       </div>
 <div [ngSwitch]="menuType"  class="navbar-nav ms-auto">
       <ul *ngSwitchCase="'default'" class="navbar-nav ms-auto"> 
@@ -19,13 +18,31 @@
           <a class="nav-link" style="padding-left: 15px;" routerLink="seller-auth">Seller</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="padding-left: 15px;">Login</a>
+          <a class="nav-link" style="padding-left: 15px;"routerLink="user-auth">Login/Sign-Up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="padding-left: 15px;">Cart(0)</a>
+          <a class="nav-link" style="padding-left: 15px;">Cart {{cartItems}}</a>
         </li>
       </ul>
-
+      <ul *ngSwitchCase="'user'" class="navbar-nav ms-auto"> 
+        <li class="nav-item">
+          <a class="nav-link" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 15px;" routerLink="seller-auth">Seller</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 15px; cursor: pointer;"(click)="userLogOut()">Logout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 15px; font-family: Georgia,
+           'Times New Roman', Times, serif;">Hi: {{userName | titlecase}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 15px;">Cart {{cartItems}}</a>
+        </li>
+      </ul>
       <ul *ngSwitchCase="'seller'" class="navbar-nav ms-auto"> 
         <li class="nav-item">
           <a class="nav-link" style="padding-left: 15px;" routerLink="seller-add-product"> Add Product</a>
@@ -45,3 +62,5 @@
     </div>
   </div>
 </nav>
+
+

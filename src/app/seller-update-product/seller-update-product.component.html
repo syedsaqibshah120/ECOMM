@@ -1,16 +1,16 @@
 <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-4 col-md-6 col-sm-12 login-form">
-        <form #addProductForm="ngForm" (ngSubmit)="submit(addProductForm.value, addProductForm)">
+        <form #addProductForm="ngForm" (ngSubmit)="submit(addProductForm.value)">
           
-          <h3 style="text-align: center;">Add New Product</h3>
+          <h3 style="text-align: center;">Update Product</h3>
           <label style="color: blueviolet;">Product Name</label>
           <div class="mb-3">
             <input type="text" 
             class="form-control" 
              placeholder="Enter product name" 
              name="name" 
-             ngModel>
+             ngModel="{{productData?.name}}">
            </div>
            <label style="color: blueviolet;">Price</label>
            <div class="mb-3">
@@ -18,7 +18,7 @@
             class="form-control" 
              placeholder="product price" 
              name="price" 
-             ngModel>
+             ngModel="{{productData?.price}}">
            </div>
            <label style="color: blueviolet;">Color</label>
            <div class="mb-3">
@@ -26,7 +26,7 @@
             class="form-control" 
              placeholder="color" 
              name="color" 
-             ngModel>
+             ngModel="{{productData?.color}}">
            </div>
            <label style="color: blueviolet;">category</label>
            <div class="mb-3">
@@ -34,7 +34,7 @@
             class="form-control" 
              placeholder="product category" 
              name="category" 
-             ngModel>
+             ngModel="{{productData?.category}}">
            </div>
            <label style="color: blueviolet;">image url</label>
         <div class="mb-3">
@@ -42,7 +42,7 @@
             class="form-control" 
              placeholder="Enter product Image URL" 
              name="image" 
-             ngModel>
+             ngModel="{{productData?.image}}">
            </div>
            <label style="color: blueviolet;">Description</label>
            <div class="mb-3">
@@ -50,11 +50,11 @@
                 class="form-control" 
                 placeholder="Enter about product" 
                 name="description" 
-                ngModel>
+                ngModel="{{productData?.description}}">
             </textarea>
-           <p class="message-successfull">{{addProductMessage}}</p>
+           <p class="message-successfull">{{productMessage}}</p>
         </div>
-           <button  type="submit" class="btn btn-primary ">Add Product</button>
+           <button  type="submit" class="btn btn-primary ">Update Product</button>
         </form>
       </div>
     </div>

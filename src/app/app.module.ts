@@ -10,6 +10,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule,HttpClient  } from '@angular/common/http';
 import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { UserAuthComponent } from './user-auth/user-auth.component';
+import { FooterComponent } from './footer/footer.component'; 
+
 
 @NgModule({
   declarations: [
@@ -19,6 +25,10 @@ import { SellerAddProductComponent } from './seller-add-product/seller-add-produ
     SellerAuthComponent,
     SellerHomeComponent,
     SellerAddProductComponent,
+    SellerUpdateProductComponent,
+    ProductDetailsComponent,
+    UserAuthComponent,
+    FooterComponent,
     
   ],
   imports: [
@@ -26,7 +36,9 @@ import { SellerAddProductComponent } from './seller-add-product/seller-add-produ
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    
+    FormsModule,
+    FontAwesomeModule,
+  
   ],
   providers: [
     provideClientHydration()
